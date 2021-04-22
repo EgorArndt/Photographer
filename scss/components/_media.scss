@@ -1,0 +1,28 @@
+@import "../variables";
+
+.media-wrap {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+
+  & > ul {
+    position: fixed;
+    top: 1rem;
+    right: 2rem;
+    display: flex;
+    gap: 1rem;
+  }
+
+  .media {
+    height: 24px;
+    width: 24px;
+    
+    img { 
+      height: inherit;
+      width: inherit;
+    }
+  }
+}
+

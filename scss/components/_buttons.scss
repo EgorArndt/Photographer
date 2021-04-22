@@ -1,0 +1,24 @@
+@import "../variables";
+
+%btn-shared {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 3px;
+  transition: ease-out 0.5s;
+  text-transform: uppercase;
+}
+
+.btn {
+  @extend %btn-shared;
+
+  &-primary {
+    // background: $primary-brown;
+    color: #fff;
+    border: 2px solid #fff;
+  }
+}

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google API Fonts Source Serif Pro  -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap" rel="stylesheet">
+  <!-- Font awesome  -->
+  <script defer src="https://kit.fontawesome.com/0ffe76bb64.js" crossorigin="anonymous"></script>
+
+
+  <!-- CSS  -->
+  <link rel="stylesheet" href="dist/css/main.css">
+  <!-- JS  -->
+  <script defer src="dist/js/contact.js"></script>
+
+  <title>Tom Riddle</title>
+</head>
+<body>
+  <div id="root">
+    <!-- Header  -->
+    <div id="header">
+      <div id="logo">
+        <img src="dist/img/logo-1.png" class="img" alt="">
+      </div>
+    </div>
+
+    <!-- Contact  -->
+    <section class="contact">
+      <div class="contact-1">
+        <div class="contact-header">
+          <h2 class="section-title" id="step">Hi there!</h2>
+          <p class="section-text" id="step-description"> How about we take some photos together? <br>Feel free to get in touch with me! I will be quick to reply.</p>
+          <p class="invalid-text" id="error">Fields marked with * are required.</p>
+        </div>
+        <div class="contact-body">
+          <div class="carousel">
+            <div class="carousel-item">
+              <div class="carousel-content">
+                <div class="buscar required step-1">
+                  <input type="text" autocomplete="off">
+                  <span id="name-span">Your name</span>
+                </div>
+                <div class="buscar required step-1">
+                  <input type="text" autocomplete="off">
+                  <span id="lastname-span">Your lastname</span>
+                </div>
+              </div>
+              <div class="carousel-controller">
+                <div class="arrow arrow-right" id="to-item-2">
+                  <i class="fas fa-chevron-right fa-2x"></i>
+                </div>
+              </div>
+            </div>
+  
+            <div class="carousel-item">
+              <div class="carousel-controller">
+                <div class="arrow arrow-left" id="back-to-item-1">
+                  <i class="fas fa-chevron-left fa-2x"></i>
+                </div>
+              </div>
+              <div class="carousel-content">
+                <div class="buscar required step-2">
+                  <input type="email" id="email" autocomplete="off">
+                  <span id="email-span">Your email</span>
+                </div>
+                <div class="buscar">
+                  <input type="text" autocomplete="off">
+                  <span id="telephone-span">Your telephone</span>
+                </div>
+              </div>
+              <div class="carousel-controller">
+                <div class="arrow arrow-right" id="to-item-3">
+                  <i class="fas fa-chevron-right fa-2x"></i>
+                </div>
+              </div>
+            </div>
+  
+            <div class="carousel-item">
+              <div class="carousel-controller">
+                <div class="arrow arrow-left" id="back-to-item-2">
+                  <i class="fas fa-chevron-left fa-2x"></i>
+                </div>
+              </div>
+              <div class="carousel-content" id="message-container">
+                <textarea name="message" id="message" class="step-3"></textarea>
+              </div>
+              <div class="carousel-controller">
+                <div class="arrow arrow-right" id="submit">
+                  <i class="fas fa-paper-plane fa-2x"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-2">
+        <!-- Slider -->
+        <div class="slider-container">
+          <div class="slider-wrapper">
+            <div class="slide"><img src="https://source.unsplash.com/random/450x450" alt="alt"></div>
+            <div class="slide"><img src="https://source.unsplash.com/random/450x451" alt="alt"></div>
+            <div class="slide"><img src="https://source.unsplash.com/random/450x452" alt="alt"></div>
+            <div class="slide"><img src="https://source.unsplash.com/random/450x449" alt="alt"></div>
+            <div class="slide"><img src="https://source.unsplash.com/random/450x448" alt="alt"></div>
+          </div>
+          <!-- Pagination -->
+          <div class="slider-pagination"></div>
+        </div>
+      </div>
+      
+    </section>
+
+    <!-- DOM Components attached directly to the root  -->
+    <!-- Hamburger  -->
+    <div class="menu-wrap">
+      <input type="checkbox" class="toggler" />
+      <div class="hamburger"><div></div></div>
+      <div class="menu">
+        <div>
+          <div>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="about.html">About</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Social media links  -->
+    <div class="media-wrap">
+      <ul>
+        <li><a href="#" class="media"><img src="dist/img/twitter.svg" alt=""></a></li>
+        <li><a href="#" class="media"><img src="dist/img/telegram.svg" alt=""></a></li>
+        <li><a href="#" class="media"><img src="dist/img/instagram.svg" alt=""></a></li>
+      </ul>
+    </div>
+
+    <!-- Modal  -->
+    <div class="modal modal-contact">
+      <div class="modal-message">
+        <div class="exit">&times;</div>
+        <div class="modal-header"></div>
+        <div class="modal-body">
+          <div class="modal-img"><img src="" alt=""></div>
+          <div class="modal-text"></div>
+        </div>
+        <a href="#" class="btn btn-modal"></a>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+@import "variables";
+@import "utilityClasses";
+@import "./components/hamburger";
+@import "./components/media";
+@import "./components/buttons";
+@import "./components/coverBox";
+@import "./components/loader";
+@import "./components/preloader";
+@import "./components/carousel";
+@import "./components/modal";
+@import "./components/footer";
+@import "./components/scrollbar";
+
+// DOM Sections
+@import "./components/header";
+@import "./components/showcase";
+@import "./components/gallery";
+@import "./components/contact";
+@import "./components/about";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+html,
+body {
+  background-color: $primary-black;
+  color: #fff;
+  font-family: $font-stack;
+  line-height: 1.2;
+  height: 100%;
+  width: 100%;
+  scroll-behavior: smooth;
+  display: flex;
+  justify-content: center;
+  scroll-behavior: smooth;
+}
+
+#root {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}

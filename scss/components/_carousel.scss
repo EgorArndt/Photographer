@@ -1,0 +1,65 @@
+@import "../variables";
+
+// Height & Width are specified in a separate file (contact.scss) in order to keep the carousel reusable
+.carousel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  gap: 32px;
+  transition: left 0.7s;
+
+  &-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .carousel-content {
+      width: 100%;
+    }
+  }
+
+  &-controller {
+    margin-bottom: 2rem;
+    cursor: pointer;
+    .arrow-right { margin-left: 1rem; }
+    .arrow-left { margin-right: 1rem; }
+  }
+
+  .buscar {
+    position: relative;
+    display: flex;
+    height: 1.5rem;
+    border-radius: 15px;
+    border: 1px solid #fff;
+    width: 100%;
+    align-items: center;
+    padding: 1rem;
+    z-index: 1;
+    margin-bottom: 2rem;
+  }
+
+  input {
+    outline: none;
+    border: none;
+    background: none;
+    font-size: 0.9rem;
+    z-index: 1;
+    width: 100%;
+    color: #fff;
+    font-family: $font-stack;
+  }
+
+  .required:after {
+    content: "*";
+    color: $red;
+  }
+
+  span {
+    position: absolute;
+    color: #fff;
+    font-size: 0.9rem;
+    background: #000;
+    transition: transform 0.25s;
+  }
+}

@@ -1,0 +1,167 @@
+@import "../variables";
+
+.contact {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  background-color: $primary-black;
+
+  .section-title {
+    margin: 0 0 10px;
+  }
+  .section-text {
+    margin: 0rem 0 1rem;
+  }
+
+  &-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 2rem;
+  }
+
+  &-body {
+    width: $form-width;
+    height: $form-height;
+    position: relative;
+    overflow: hidden;
+
+    .carousel {
+      width: 300%;
+
+      &-item {
+        height: $form-height;
+        width: $form-width;
+      }
+
+      #message-container {
+        position: relative;
+
+        &:after {
+          position: absolute;
+          content: "*";
+          color: $red;
+          top: 1rem;
+          right: 1rem;
+        }
+      }
+
+      #message {
+        height: 200px;
+        width: 100%;
+        border: #fff 1px solid;
+        color: #fff;
+        font-size: 0.9rem;
+        background-color: #000;
+        font-family: $font-stack;
+        outline: none;
+        resize: none;
+        padding: 1rem;
+
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+      }
+    }
+  }
+
+  &-2 {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    padding-top: 0;
+
+    .slider-container {
+      height: 450px;
+      width: 450px;
+      position: relative;
+      overflow: hidden;
+
+      .slider-wrapper {
+        height: 500%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        transition: 0.8s ease;
+        transform: translateY(0);
+
+        .slide {
+          //  WHY IS THIS HEIGHT WORKING?????
+          // HOW IS IT ATTACHED TO SLIDER-CONTAINER??
+          height: 100%;
+          width: 100%;
+          position: relative;
+
+          img {
+            height: 100%;
+            width: 95%;
+            position: absolute;
+            top: 0;
+            left: 0;
+          }
+        }
+      }
+
+      .slider-pagination {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        right: -97%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        
+        .scroller {
+          height: 10px;
+          width: 10px;
+          border: 1px solid #fff;
+          border-radius: 50%;
+          background-color: #fff;
+          cursor: pointer;
+        }
+
+        .active {
+          background-color: $blue;
+        }
+      }
+    }
+  }
+}
+
+// Customize modal for contact page
+.modal-contact {
+  .modal-img {
+    height: 70px;
+    width: 70px;
+  }
+}
+
+@media(max-width: 1280px){
+  .contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-2 {
+    display: none;
+  }
+}
+

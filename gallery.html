@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google API Fonts Source Serif Pro  -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap" rel="stylesheet">
+  <!-- Font awesome  -->
+  <script defer src="https://kit.fontawesome.com/0ffe76bb64.js" crossorigin="anonymous"></script>
+
+  <!-- CSS  -->
+  <link rel="stylesheet" href="dist/css/main.css">
+  <!-- JS  -->
+  <script type="module" src="dist/js/gallery.js"></script>
+
+  <title>Tom Riddle</title>
+</head>
+  <body>
+    <div id="root"> 
+      <div id="header">
+        <div id="logo">
+          <img src="dist/img/logo-1.png" class="img" alt="">
+        </div>
+      </div>
+
+      <section class="albums section">
+        <div class="container">
+          <div class="albums-header">
+            <h3 class="section-title">Albums</h3>
+            <div id="directory" class="section-title"></div>
+          </div>
+          <div class="albums-body">
+            <!-- Albums  -->
+            <div class="coverBx">
+              <div class="coverBx-image">
+                <img src="https://source.unsplash.com/random/350x350" alt="">
+              </div>
+              <div class="coverBx-text">
+                <div class="coverBx-text-wrap">
+                  <div class="coverBx-text-title">
+                    Seasons 2021
+                  </div>
+                  <p class="coverBx-text-desc">View</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="coverBx">
+              <div class="coverBx-image">
+                <img src="https://source.unsplash.com/random/350x351" alt="">
+              </div>
+              <div class="coverBx-text">
+                <div class="coverBx-text-wrap">
+                  <div class="coverBx-text-title">
+                    Nature
+                  </div>
+                  <p class="coverBx-text-desc">View</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="coverBx">
+              <div class="coverBx-image">
+                <img src="https://source.unsplash.com/random/350x352" alt="">
+              </div>
+              <div class="coverBx-text">
+                <div class="coverBx-text-wrap">
+                  <div class="coverBx-text-title">
+                    Couples
+                  </div>
+                  <p class="coverBx-text-desc">View</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="coverBx">
+              <div class="coverBx-image">
+                <img src="https://source.unsplash.com/random/350x354" alt="">
+              </div>
+              <div class="coverBx-text">
+                <div class="coverBx-text-wrap">
+                  <div class="coverBx-text-title">
+                    Weddings
+                  </div>
+                  <p class="coverBx-text-desc">View</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="coverBx">
+              <div class="coverBx-image">
+                <img src="https://source.unsplash.com/random/350x355" alt="">
+              </div>
+              <div class="coverBx-text">
+                <div class="coverBx-text-wrap">
+                  <div class="coverBx-text-title">
+                    Style
+                  </div>
+                  <p class="coverBx-text-desc">View</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="coverBx">
+              <div class="coverBx-image">
+                <img src="https://source.unsplash.com/random/350x349" alt="">
+              </div>
+              <div class="coverBx-text">
+                <div class="coverBx-text-wrap">
+                  <div class="coverBx-text-title">
+                    Architecture
+                  </div>
+                  <p class="coverBx-text-desc">View</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Gallery  -->
+          <div class="gallery"></div> 
+
+        </div>
+      </section>
+
+      <!-- DOM Components attached directly to the root  -->
+    <!-- Hamburger  -->
+    <div class="menu-wrap">
+      <input type="checkbox" class="toggler" />
+      <div class="hamburger"><div></div></div>
+      <div class="menu">
+        <div>
+          <div>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="about.html">About</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Social media links  -->
+    <div class="media-wrap">
+      <ul>
+        <li><a href="#" class="media"><img src="dist/img/twitter.svg" alt=""></a></li>
+        <li><a href="#" class="media"><img src="dist/img/telegram.svg" alt=""></a></li>
+        <li><a href="#" class="media"><img src="dist/img/instagram.svg" alt=""></a></li>
+      </ul>
+    </div>
+
+    <!-- Loader  -->
+    <div class="loader-wrap" id="change-directory-loader">
+      <div class="loader-text">Making some magic...</div>
+      <div class="loader">
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+
+    <!-- Preloader  -->
+    <div class="loader-wrap" id="preloader">
+      <div class="loader-text">Grabbing my wand</div>
+      <div class="loader">
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+
+    <!-- Modal  -->
+    <div class="modal modal-gallery">
+      <div class="modal-message">
+        <div class="exit">&times;</div>
+        <div class="modal-header"></div>
+        <div class="modal-body">
+          <div class="modal-img"><img src="" alt=""></div>
+          <div class="modal-text"></div>
+        </div>
+        <div class="modal-footer"><p></p></div>
+        <a href="#" class="btn btn-modal"></a>
+      </div>
+      <div class="background-exit">&times;</div>
+    </div>
+
+
+    </div>
+  </body>
+</html>

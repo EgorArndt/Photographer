@@ -1,0 +1,22 @@
+@import "../variables";
+
+#header {
+  height: $header-height;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid $border-gray;
+  background-color: transparent;
+  color: #fff;
+
+  #logo {
+    cursor: pointer;
+    margin-top: 0.5rem;
+    
+    img {
+      height: 34px;
+      width: 34px;
+    }
+  }
+}

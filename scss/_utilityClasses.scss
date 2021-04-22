@@ -1,0 +1,121 @@
+@import "variables";
+
+.container {
+  margin: auto;
+  overflow: hidden;
+  max-width: $website-width;
+  padding: 1rem;
+}
+
+.img {
+  max-width: 100%;
+  height: auto;
+}
+
+.large-img {
+  height: 25rem;
+  width: 18rem;
+}
+
+.small-img {
+  height: 9.37rem;
+  width: 9.37rem;
+}
+
+.current {
+  border-color: #fff !important;
+}
+
+.section {
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.bottom-line {
+  height: 2px;
+  width: 5%;
+  background-color: #fff;
+  margin-bottom: 3rem;
+  margin-top: 10px;
+}
+
+.section-title {
+  font-size: 1.9rem;
+  color: #fff;
+  margin-bottom: 2rem;
+  display: inline-block;
+}
+
+.section-text {
+  font-size: 0.8rem;
+  color: #fff;
+  margin: 2rem 0;
+}
+
+.dark-overlay {
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.small-text {
+  font-size: 0.8rem;
+}
+
+.large-text {
+  font-size: 4rem;
+}
+
+.text-bold {
+  font-weight: 600;
+}
+
+// Album turns to a button when openning it
+.fadeoutBackBtn {
+  color: $border-gray;
+  transition: 0.2s;
+  cursor: pointer;
+
+  &:hover {
+    color: #444;
+    border-bottom: #444 1px solid !important;
+  }
+}
+
+.preloaderFadeOut {
+  display: none !important;
+}
+
+.invalid-text {
+  color: $red !important;
+  visibility: hidden;
+}
+
+.invalid-border {
+  border-color: $red !important;
+}
+
+.color-red {
+  color: $red !important;
+}
+
+.color-green {
+  color: $green !important;
+}
+
+.movedSpan {
+  transform: scale(0.90) translateY(-1.2rem);
+}
+
+.boxes {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-rows: minmax(50px, auto);
+  gap: 2rem;
+}

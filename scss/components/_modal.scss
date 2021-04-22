@@ -1,0 +1,91 @@
+@import "../variables";
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0,0.7);
+  z-index: 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+
+  
+  .background-exit {
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    transform: scale(2.2);
+    font-weight: 600;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+
+  &-message {
+    min-height: 100px;
+    min-width: $form-width;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #fff;
+    color: $primary-black;
+    border-radius: 15px;
+    padding: 2rem;
+    margin: 1rem;
+    font-size: 1.2rem;
+
+    .modal-header {
+      font-weight: 800;
+      margin: 1rem 0;
+    }
+
+    .modal-body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      // Div, height & width are to be specified in a separate file
+      .modal-img {
+        position: relative;
+        margin-right: 2rem;
+
+        img {
+          position: absolute;
+          height: 100%;
+          width: 100%;
+          top: 0;
+          left: 0;
+          border-radius: 50%;
+        }
+      }
+      .modal-text {
+        font-size: .9rem;
+      }
+    }
+
+    .exit {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      cursor: pointer;
+      transform: scale(1.25);
+      color: #444;
+    }
+
+    .btn-modal {
+      text-transform: none;
+      font-size: 1rem;
+      margin-top: 2rem;
+      color: $blue;
+      font-weight: 600;
+    }
+  }
+}
